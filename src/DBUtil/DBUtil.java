@@ -1,14 +1,14 @@
 package DBUtil;
 
 import java.sql.Connection;
-  import java.sql.DriverManager;
+import java.sql.DriverManager;
   import java.sql.PreparedStatement;
   import java.sql.ResultSet;
   import java.sql.SQLException;
  import java.sql.Statement;
          public class DBUtil {
 
-             public static String db_url = "jdbc:mysql://localhost:3306/user?serverTimezone=UTC";//登录数据库
+             public static String db_url = "jdbc:mysql://localhost:3306/user?serverTimezone=UTC";
      public static String db_user = "root";
      public static String db_pass = "123";
 
@@ -16,7 +16,7 @@ import java.sql.Connection;
                  Connection conn = null;
 
                  try {
-                         Class.forName("com.mysql.cj.jdbc.Driver");//加载驱动
+                         Class.forName("com.mysql.cj.jdbc.Driver");
                          conn = DriverManager.getConnection(db_url, db_user, db_pass);
                      } catch (Exception e) {
                          e.printStackTrace();
