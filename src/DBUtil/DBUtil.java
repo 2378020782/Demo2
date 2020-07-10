@@ -6,11 +6,6 @@ import java.sql.Connection;
   import java.sql.ResultSet;
   import java.sql.SQLException;
  import java.sql.Statement;
-
-         /**
-   * @author Hu
-   *
-   */
          public class DBUtil {
 
              public static String db_url = "jdbc:mysql://localhost:3306/user?serverTimezone=UTC";//登录数据库
@@ -29,11 +24,6 @@ import java.sql.Connection;
 
                  return conn;
              }
-      /**
-           * 关闭与数据库的连接
-       * @param state
-       * @param conn
-       */
              public static void close (Statement state, Connection conn) {
                  if (state != null) {
                          try {
