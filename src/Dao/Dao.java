@@ -11,7 +11,6 @@ import java.sql.Connection;
 
               public boolean add(User user) {
                  String sql = "insert into uses1 (username,password,sex,name,stuname,email,xueyuan,xi,banji,year,address,addtext) values('"+ user.getUsername() + "','"+ user.getPassword() +"','"+ user.getSex() +"','"+user.getName() +"','"+ user.getStuname() +"','"+user.getEmail()+"','"+ user.getXueyuan() +"','"+user.getXi()+"','"+user.getBanji()+"','"+user.getYear()+"','"+user.getAddress()+"','"+user.getAddtext()+"')";
-                 // 创建数据库链接
                  Connection conn = DBUtil.getConn();
                  Statement state = null;
                  boolean f = false;
