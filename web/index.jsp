@@ -35,18 +35,13 @@
                      }
 
                  var stuname = document.getElementById("stuname").value;
-                 if(stuname.length!=8){
-                         alert("学号长度错误！");
-                         return false;
-                     }
-                 if(stuname [0]=='2'&&stuname[1]=='0'&&stuname[2]=='1'&&stuname[3]=='8'){
-                         flag++;
-                         }
-                 else{
-                         alert("学号格式错误！");
-                         return false;
-                     }
-
+                 if(stuname.length==8) {
+                     flag++;
+                 }
+                else{
+                     alert("学号长度错误！");
+                     return false;
+                 }
                  var email = document.getElementById("email").value;
                  if(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(email)){
                          flag++;
