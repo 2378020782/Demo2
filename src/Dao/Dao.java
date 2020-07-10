@@ -9,8 +9,7 @@ import java.sql.Connection;
 
           public class Dao {
 
-             public boolean add(User user) {
-                 //将数据插入数据库的SQL语句
+              public boolean add(User user) {
                  String sql = "insert into uses1 (username,password,sex,name,stuname,email,xueyuan,xi,banji,year,address,addtext) values('"+ user.getUsername() + "','"+ user.getPassword() +"','"+ user.getSex() +"','"+user.getName() +"','"+ user.getStuname() +"','"+user.getEmail()+"','"+ user.getXueyuan() +"','"+user.getXi()+"','"+user.getBanji()+"','"+user.getYear()+"','"+user.getAddress()+"','"+user.getAddtext()+"')";
                  // 创建数据库链接
                  Connection conn = DBUtil.getConn();
