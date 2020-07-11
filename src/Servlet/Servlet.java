@@ -41,12 +41,9 @@ import java.io.IOException;
                  String year= req.getParameter("year");
                  String address= req.getParameter("address");
                  String addtext= req.getParameter("addtext");
-                 //调用用户属性类
                  User user = new User(username,password,sex,name,stuname,email,xueyuan,xi,banji,year,address,addtext);
-                 //接受判断函数返回值
                  Dao dao =new Dao();
                  boolean f=dao.add(user);
-                 //提示信息
                  if(f) {
                          req.setAttribute("message", "注册成功！");
                          req.getRequestDispatcher("users.jsp").forward(req,resp);
