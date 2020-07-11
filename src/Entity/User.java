@@ -2,18 +2,18 @@ package Entity;
 
 public class User {
 
-      private String username;
-       private String password;
-       private String sex;
-       private String name;
-       private String stuname;
-      private String email;
-      private String xueyuan;
-      private String xi;
-      private String banji;
-      private String year;
-      private String address;
-      private String addtext;
+    private String username;
+    private String password;
+    private String sex;
+    private String name;
+    private String stuname;
+    private String email;
+    private String xueyuan;
+    private String xi;
+    private String banji;
+    private String year;
+    private String address;
+    private String addtext;
 
               public String getUsername() {
                  return username;
