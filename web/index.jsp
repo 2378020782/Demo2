@@ -13,13 +13,11 @@
    <meta charset="UTF-8">
    <title>Insert title here</title>
    <script>
-       //表单校验
         function check() {
                  flag=0;
-                 var rep =  /^[\w\u4e00-\u9fa5]{6,8}$/;  //判断字符串是否为数字和字母组合
-                 var myPattern = new RegExp("^[a-zA-Z]"); // 以英文字母开头
+                 var rep =  /^[\w\u4e00-\u9fa5]{6,8}$/;
+                 var myPattern = new RegExp("^[a-zA-Z]");
                  var username = document.getElementById("username").value;
-                 //alert(username.length);
                  if(!(username.length>5&&username.length<13)){
                          alert("用户名长度错误！");return false;
                      }
@@ -50,7 +48,6 @@
                          alert("邮箱格式错误！");
                          return false;
                      }
-                 //标志法判断是否添加成功
                  if(flag>1){
                          alert("添加成功");
                          return true;
