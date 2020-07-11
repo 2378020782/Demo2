@@ -2,18 +2,13 @@ package Servlet;
 
 import java.io.IOException;
 
-          import javax.servlet.ServletException;
+  import javax.servlet.ServletException;
   import javax.servlet.annotation.WebServlet;
   import javax.servlet.http.HttpServlet;
   import javax.servlet.http.HttpServletRequest;
   import javax.servlet.http.HttpServletResponse;
-
-         import Dao.Dao;
-
-         import Entity.User;
-
-
-
+  import Dao.Dao;
+  import Entity.User;
 
          @WebServlet("/Servlet")
  public class Servlet extends HttpServlet {
@@ -31,7 +26,6 @@ import java.io.IOException;
                          add(req, resp);
                      }
              }
-
 
              public void add(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
                  req.setCharacterEncoding("utf-8");
